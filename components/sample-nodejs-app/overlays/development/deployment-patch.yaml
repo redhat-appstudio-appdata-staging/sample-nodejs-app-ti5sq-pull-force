@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: sample-nodejs-app
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/tmadore-tenant/sample-nodejs-app/sample-nodejs-app@sha256:73b478254501f3cbb3968718af6d1f265e5b583f14463432cfd993ece192bdad
+        name: container-image
+        resources: {}
+status: {}
